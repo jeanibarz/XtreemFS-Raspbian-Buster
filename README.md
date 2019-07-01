@@ -17,3 +17,16 @@ To replace the existing SWAP by using a USB disk, assuming your USB device has o
 Then `swapon /dev/sda1` activate the SWAP partition for use. Check that the partition is used by the system by running `swapon --show`.
 
 Optionally,you can run remove the default SWAP partition allocated on the SD card: `swapoff /dev/thepartitiontobedisabled`
+
+# Usage
+
+Configure the OSD you want to use in for storage with a config file in /xtreemfs_data/osdconfig.properties
+
+Run docker-compose:
+`docker-compose up -d`
+
+Run the client:
+`docker run -t -i --privileged --net=host xtreemfs/xtreemfs-client /bin/bash`
+
+Create a volume:
+`mkfs.xtreemfs localhost/storage`
