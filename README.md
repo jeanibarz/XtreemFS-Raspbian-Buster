@@ -22,6 +22,8 @@ Optionally,you can run remove the default SWAP partition allocated on the SD car
 
 Configure the OSD you want to use in for storage with a config file in /xtreemfs_data/osdconfig.properties
 
+Cd to the xtreemfs-docker folder (where you cloned the repository https://github.com/xtreemfs/xtreemfs-docker).
+
 Run docker-compose:
 `docker-compose up -d`
 
